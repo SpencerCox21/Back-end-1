@@ -14,7 +14,27 @@
 
     <button id="button">GET Friends List</button>
 
+
+<br>
+<br>
+<br>
+
+
+    <div class="container">
+      <form id="submitBtn">
+        <input id="inputText" type="text">
+        <button>Get request</button>
+      </form>
+      <button id="clearInputArr">Clear Inputs</button>
+    </div>
+
+
+
+
+
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index2.js"></script>
     <script>
       document.getElementById("button").onclick = function () {
         axios
@@ -32,6 +52,7 @@
               '<li class="text-danger">' + err.message + "</li>";
           });
       };
+
     </script>
   </body>
 </html>
